@@ -5,22 +5,76 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Moja strona</title>
   <style>
+    /* Reset marginesów i paddingów */
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
     body {
       font-family: Arial, sans-serif;
-      text-align: center;
-      margin-top: 100px;
-      background-color: #f4f4f4;
+      line-height: 1.6;
+      background-color: #f0f4f8;
+      color: #333;
     }
+
+    header {
+      background-color: #2b6cb0;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    nav {
+      margin-top: 10px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    main {
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
     h1 {
       color: #2b6cb0;
+      margin-bottom: 20px;
     }
-    p {
-      color: #333;
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #2b6cb0;
+      color: white;
+      margin-top: 40px;
     }
   </style>
 </head>
 <body>
-  <h1>Witaj na mojej stronie!</h1>
-  <p>Strona działa dzięki GitHub Pages 🎉</p>
+  <header>
+    <h2>Moja Strona</h2>
+    <nav>
+      <a href="#">Strona główna</a>
+      <a href="#">O mnie</a>
+      <a href="#">Kontakt</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Witaj na mojej stronie!</h1>
+    <p>Strona działa dzięki GitHub Pages 🎉</p>
+    <p>Tu możesz dodawać teksty, obrazki i linki do innych stron.</p>
+  </main>
+
+  <footer>
+    &copy; 2025 Moja Strona
+  </footer>
 </body>
 </html>
